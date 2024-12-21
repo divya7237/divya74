@@ -1,0 +1,110 @@
+/* General reset and styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background for the entire page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .game-container {
+    text-align: center;
+    background-color: #fff; /* White background for the game container */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Slight shadow for the game container */
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for header */
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto; /* Centering the grid */
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #e0e0e0; /* Light gray background for cells */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  /* Hover effect for each cell */
+  .cell:hover {
+    background-color: #d1d1d1; /* Darker gray when hovered */
+  }
+  
+  /* Player-specific colors */
+  .cell.X {
+    background-color: #ffcccb; /* Light red background for X */
+  }
+  
+  .cell.O {
+    background-color: #cce5ff; /* Light blue background for O */
+  }
+  
+  /* Game over - Disable clicks after game is over */
+  .game-over .cell {
+    cursor: not-allowed; 
+  }
+  
+  /* Highlight winning cells */
+  .winning-cell {
+    background-color: black !important; /* Yellow background for winning cells */
+  }
+  
+  /* Style for controls section (reset button, game mode) */
+  .controls {
+    margin-top: 20px;
+  }
+  
+  button, select {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .status-message {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #555; /* Medium gray color for status messages */
+  }
+  
+  
