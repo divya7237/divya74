@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .stopwatch-container {
+    background-color: rgba(128, 0, 128, 0.488);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .time-display {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .controls button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .controls button:hover {
+    background-color: #45a049;
+  }
+  
+  .controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .lap-list {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .lap-list h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  ul li span {
+    float: right;
+  }
+  
